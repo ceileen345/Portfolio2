@@ -70,62 +70,59 @@ li {
   background-color: #07395F;
 }
 
-.content {
-  grid-area: content;
-  text-align: center;
-  padding: 30px;
-  background-color: #3E749D;
-  margin-left: -5%;
-  margin-right: -10%;
-  font-size: 18px;
-}
-
-.portrait {
-  grid-area: portrait;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.portrait img {
-  border-radius: 10px;
-}
-
-.skills {
-  grid-area: skills;
-  text-align: center;
-}
-
-.familiar {
-  grid-area: familiar;
-  text-align: center;
-}
-
-.contact {
-  grid-area: contact;
+.weather {
+  grid-area: weather;
+  padding: 10px;
   padding-top: 20px;
   text-align: center;
 }
 
-.contact a {
-  text-decoration: none;
-  color: #d2e7f7;
+.weather img {
+  border-radius: 20px;
 }
 
-.contact a:hover{
-  color: white;
+.weather img:hover{
+  box-shadow: 0px 0px 5px #fff;
+}
+
+.wikisearch {
+  grid-area: wikisearch;
+  padding: 10px;
+  text-align: center;
+}
+
+.wikisearch img {
+  border-radius: 20px;
+}
+
+.wikisearch img:hover{
+  box-shadow: 0px 0px 5px #fff;
+}
+
+.twitch {
+  grid-area: twitch;
+  padding: 10px;
+  text-align: center;
+}
+
+.twitch img {
+  border-radius: 20px;
+}
+
+.twitch img:hover{
+  box-shadow: 0px 0px 5px #fff;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
   grid-template-areas:
-  "jumbotron jumbotron jumbotron"
-  "navbar navbar navbar"
-  "content content content"
-  "skills portrait familiar"
-  ". contact .";
+  "jumbotron jumbotron jumbotron jumbotron"
+  "navbar navbar navbar navbar"
+  " . weather weather . "
+  ". wikisearch wikisearch . "
+  ". twitch twitch . ";
 }
 
 @media only screen and (min-width: 600px) {
@@ -199,63 +196,62 @@ li {
       background-color: #07395F;
     }
 
-    .content {
-      grid-area: content;
-      text-align: center;
-      padding: 30px;
-      background-color: #3E749D;
-      margin-left: -5%;
-      margin-right: -10%;
-      font-size: 18px;
-    }
-
-    .portrait {
-      grid-area: portrait;
-      margin-top: 20px;
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-
-    .portrait img {
-      border-radius: 10px;
-    }
-
-    .skills {
-      grid-area: skills;
-      text-align: center;
-    }
-
-    .familiar {
-      grid-area: familiar;
-      text-align: center;
-    }
-
-    .contact {
-      grid-area: contact;
+    .weather {
+      grid-area: weather;
+      padding: 10px;
       padding-top: 20px;
       text-align: center;
     }
 
-    .contact a {
-      text-decoration: none;
-      color: #d2e7f7;
+    .weather img {
+      border-radius: 20px;
     }
 
-    .contact a:hover{
-      color: white;
+    .weather img:hover{
+      box-shadow: 0px 0px 5px #fff;
+    }
+
+    .wikisearch {
+      grid-area: wikisearch;
+      padding: 10px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .wikisearch img {
+      border-radius: 20px;
+    }
+
+    .wikisearch img:hover{
+      box-shadow: 0px 0px 5px #fff;
+    }
+
+    .twitch {
+      grid-area: twitch;
+      padding: 10px;
+      padding-top: 5px;
+      text-align: center;
+    }
+
+    .twitch img {
+      border-radius: 20px;
+    }
+
+    .twitch img:hover{
+      box-shadow: 0px 0px 5px #fff;
     }
 
     .container {
       display: grid;
-      grid-template-columns: 33% 33% 33%;
+      grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
       grid-template-rows: auto;
       grid-template-areas:
-      "jumbotron jumbotron jumbotron"
-      "navbar navbar navbar"
-      "content content content"
-      "skills portrait familiar"
-      ". contact .";
+      "jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron"
+      "navbar navbar navbar navbar navbar navbar"
+      ". weather weather wikisearch wikisearch ."
+      ". . twitch twitch . . ";
     }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -303,15 +299,17 @@ li {
     background-size: cover;
     margin-left: -5%;
     margin-top: -10px;
-    margin-right: -5%;
+    margin-right: -10%;
   }
 
   .navbar {
     grid-area: navbar;
+    margin-right: -10%;
   }
 
 
   .navbar a {
+    float:left;
     text-decoration:none;
     width: 25%;
     text-align: center;
@@ -330,74 +328,70 @@ li {
   .navspan1 {
     grid-area: navspan1;
     background-color: #144D78;
-    margin-left: -30%;
+    margin-left: -10px;
   }
 
   .navspan2 {
     grid-area: navspan2;
     background-color: #144D78;
     margin-left: 10px;
-    margin-right: -30%;
+    margin-right: -20px;
   }
 
-  .content {
-    grid-area: content;
-    text-align: center;
-    padding: 30px;
-    background-color: #3E749D;
-    margin-left: -5%;
-    margin-right: -5%;
-    font-size: 18px;
-  }
 
-  .portrait {
-    grid-area: portrait;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-align: center;
-  }
-
-  .portrait img {
-    border-radius: 10px;
-    max-height: 250px;
-  }
-
-  .skills {
-    grid-area: skills;
-    text-align: center;
-  }
-
-  .familiar {
-    grid-area: familiar;
-    text-align: center;
-  }
-
-  .contact {
-    grid-area: contact;
+  .weather {
+    grid-area: weather;
+    padding: 10px;
     padding-top: 20px;
     text-align: center;
   }
 
-  .contact a {
-    text-decoration: none;
-    color: #d2e7f7;
+  .weather img {
+    border-radius: 20px;
   }
 
-  .contact a:hover{
-    color: white;
+  .weather img:hover{
+    box-shadow: 0px 0px 5px #fff;
+  }
+
+  .wikisearch {
+    grid-area: wikisearch;
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .wikisearch img {
+    border-radius: 20px;
+  }
+
+  .wikisearch img:hover{
+    box-shadow: 0px 0px 5px #fff;
+  }
+
+  .twitch {
+    grid-area: twitch;
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .twitch img {
+    border-radius: 20px;
+  }
+
+  .twitch img:hover{
+    box-shadow: 0px 0px 5px #fff;
   }
 
   .container {
     display: grid;
-    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
     grid-template-areas:
-    "jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron"
-    "navspan1 navbar navbar navbar navbar navspan2"
-    "content content content content content content"
-    "skills skills portrait portrait familiar familiar"
-    ". . contact contact . .";
+    "jumbotron jumbotron jumbotron"
+    "navbar navbar navbar"
+    "weather wikisearch twitch";
   }
 
 }
