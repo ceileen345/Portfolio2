@@ -1,258 +1,6 @@
-/* For mobile phones: */
-body {
-  background-color: #266391;
-  color: #d2e7f7;
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+/* for mobile phones */
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-family: 'Dancing Script', cursive;
-  color: white;
-  font-size: 40px;
-}
-
-h2 {
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
-  color: white;
-  font-size: 30px;
-}
-
-h3 {
-  font-family: 'Dancing Script', cursive;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin-left: -40px;
-}
-
-.jumbotron {
-  grid-area: jumbotron;
-  background-image: url(images/oceanwavesmall.jpg);
-  background-size: cover;
-  margin-left: -5%;
-  margin-top: -10px;
-  margin-right: -10%;
-}
-
-.navbar {
-  grid-area: navbar;
-  margin-left: -10px;
-  margin-right: -10%;
-}
-
-.navbar a {
-  float:left;
-  text-decoration:none;
-  width: 25%;
-  text-align: center;
-  background-color: gray;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #144D78;
-  color: #d2e7f7;
-}
-
-.navbar a:hover {
-  color: white;
-  background-color: #07395F;
-}
-
-.weather {
-  grid-area: weather;
-  padding: 10px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.weather img {
-  border-radius: 20px;
-}
-
-.weather img:hover{
-  box-shadow: 0px 0px 5px #fff;
-}
-
-.wikisearch {
-  grid-area: wikisearch;
-  padding: 10px;
-  text-align: center;
-}
-
-.wikisearch img {
-  border-radius: 20px;
-}
-
-.wikisearch img:hover{
-  box-shadow: 0px 0px 5px #fff;
-}
-
-.twitch {
-  grid-area: twitch;
-  padding: 10px;
-  text-align: center;
-}
-
-.twitch img {
-  border-radius: 20px;
-}
-
-.twitch img:hover{
-  box-shadow: 0px 0px 5px #fff;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "jumbotron jumbotron jumbotron jumbotron"
-  "navbar navbar navbar navbar"
-  " . weather weather . "
-  ". wikisearch wikisearch . "
-  ". twitch twitch . ";
-}
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    body {
-      background-color: #266391;
-      color: #d2e7f7;
-      font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 30px;
-      font-family: 'Dancing Script', cursive;
-      color: white;
-    }
-
-    h2 {
-      text-align: center;
-      font-family: 'Dancing Script', cursive;
-      color: white;
-    }
-
-    h3 {
-      font-family: 'Dancing Script', cursive;
-      color: white;
-    }
-
-    ul {
-      list-style-type: none;
-    }
-
-    li {
-      margin-left: -40px;
-    }
-
-    .jumbotron {
-      grid-area: jumbotron;
-      background-image: url(images/oceanwavesmall.jpg);
-      background-size: cover;
-      margin-left: -5%;
-      margin-top: -10px;
-      margin-right: -10%;
-    }
-
-    .navbar {
-      grid-area: navbar;
-      margin-left: -10px;
-      margin-right: -10%;
-    }
-
-    .navbar a {
-      float:left;
-      text-decoration:none;
-      width: 25%;
-      text-align: center;
-      background-color: gray;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #144D78;
-      color: #d2e7f7;
-    }
-
-    .navbar a:hover {
-      color: white;
-      background-color: #07395F;
-    }
-
-    .weather {
-      grid-area: weather;
-      padding: 10px;
-      padding-top: 20px;
-      text-align: center;
-    }
-
-    .weather img {
-      border-radius: 20px;
-    }
-
-    .weather img:hover{
-      box-shadow: 0px 0px 5px #fff;
-    }
-
-    .wikisearch {
-      grid-area: wikisearch;
-      padding: 10px;
-      padding-top: 20px;
-      text-align: center;
-    }
-
-    .wikisearch img {
-      border-radius: 20px;
-    }
-
-    .wikisearch img:hover{
-      box-shadow: 0px 0px 5px #fff;
-    }
-
-    .twitch {
-      grid-area: twitch;
-      padding: 10px;
-      padding-top: 5px;
-      text-align: center;
-    }
-
-    .twitch img {
-      border-radius: 20px;
-    }
-
-    .twitch img:hover{
-      box-shadow: 0px 0px 5px #fff;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
-      grid-template-rows: auto;
-      grid-template-areas:
-      "jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron"
-      "navbar navbar navbar navbar navbar navbar"
-      ". weather weather wikisearch wikisearch ."
-      ". . twitch twitch . . ";
-    }
-
-}
+/* @media only screen and (min-width: 600px) {
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -260,138 +8,91 @@ li {
     background-color: #266391;
     color: #d2e7f7;
     font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   h1 {
-    text-align: center;
-    margin-top: 30px;
-    font-family: 'Dancing Script', cursive;
-    color: white;
+    font-size: 50px;
   }
 
   h2 {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    color: white;
+    font-size: 30px;
   }
 
   h3 {
-    font-family: 'Dancing Script', cursive;
-    color: white;
+    font-family: Dancing Script, cursive;
+    font-size: 25px;
+
   }
 
   ul {
     list-style-type: none;
-  }
-
-  li {
     margin-left: -40px;
   }
 
-  .jumbotron {
-    grid-area: jumbotron;
-    background-image: url(images/oceanwavesmall.jpg);
-    background-size: cover;
-    margin-left: -5%;
-    margin-top: -10px;
-    margin-right: -10%;
+  .jumbotron{
+    font-family: Dancing Script, cursive;
+    background-image: url(images/oceanwave.jpg);
+    background-size: 100% auto;
+    background-repeat: none;
+    padding: 20px;
+    text-align: center;
+    color: white;
   }
+
+  .mepic {
+    display: block;
+    margin: auto;
+    max-width: 75%;
+    max-height: 250px;
+    border-radius: 50%;
+    padding-top: 15px;
+  }
+
 
   .navbar {
-    grid-area: navbar;
-    margin-right: -10%;
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    background-color: #144D78;
   }
-
 
   .navbar a {
-    float:left;
-    text-decoration:none;
-    width: 25%;
-    text-align: center;
-    background-color: gray;
+    float: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #144D78;
     color: #d2e7f7;
-  }
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+}
 
-  .navbar a:hover {
-    color: white;
-    background-color: #07395F;
-  }
+.navbar a:hover {
+  background-color: #07395F;
+  color: white;
+}
 
-  .navspan1 {
-    grid-area: navspan1;
-    background-color: #144D78;
-    margin-left: -10px;
-  }
+.middlecontent {
+  width: 100%;
+  text-align: center;
+}
 
-  .navspan2 {
-    grid-area: navspan2;
-    background-color: #144D78;
-    margin-left: 10px;
-    margin-right: -20px;
-  }
+.weather img {
+  padding-top: 20px;
+  border-radius: 25%;
+  margin: 10px;
+}
 
+.wikipedia img {
+  padding-top: 20px;
+  border-radius: 25%;
+  margin: 10px;
+}
 
-  .weather {
-    grid-area: weather;
-    padding: 10px;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .weather img {
-    border-radius: 20px;
-  }
-
-  .weather img:hover{
-    box-shadow: 0px 0px 5px #fff;
-  }
-
-  .wikisearch {
-    grid-area: wikisearch;
-    padding: 10px;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .wikisearch img {
-    border-radius: 20px;
-  }
-
-  .wikisearch img:hover{
-    box-shadow: 0px 0px 5px #fff;
-  }
-
-  .twitch {
-    grid-area: twitch;
-    padding: 10px;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .twitch img {
-    border-radius: 20px;
-  }
-
-  .twitch img:hover{
-    box-shadow: 0px 0px 5px #fff;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "jumbotron jumbotron jumbotron"
-    "navbar navbar navbar"
-    "weather wikisearch twitch";
-  }
-
+.twitch img {
+ padding-top: 20px;
+ border-radius:25%;
+ margin: 10px;
 }
